@@ -124,6 +124,14 @@ export default function Home() {
                     </a>
                     <span className="text-slate-800">|</span>
                     <a 
+                      href={`/curriculum/${step.curriculum.replace('.md', '.pdf')}`} 
+                      download
+                      className="text-slate-500 hover:text-teal-400 underline transition-colors flex items-center gap-1"
+                    >
+                      📕 {step.day}일차 교안 (PDF 다운로드)
+                    </a>
+                    <span className="text-slate-800">|</span>
+                    <a 
                       href={`/curriculum/${step.curriculum.replace('.md', '.pptx')}`} 
                       download
                       className="text-slate-500 hover:text-teal-400 underline transition-colors flex items-center gap-1"
